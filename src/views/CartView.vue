@@ -1,7 +1,7 @@
 <template>
     <div class="container cart">
         <h1 class="view-title">Cart</h1>
-        
+
         <div class="container product-card">
             <div class="card px-2">
                 <div class="row">
@@ -131,39 +131,3 @@ p {
     background-color: grey;
 }
 </style>
-
-<!-- <style>
-.cart {
-    min-height: 100vh;
-    display: flex;
-    background: aliceblue;
-    text-align: center;
-    justify-content: center;
-}
-
-.view-title {
-    color: blue;
-    text-align: center;
-    justify-content: center;
-}
-
-.btncheckout {
-    background-color: #B28F3E;
-    color: white;
-    width: 20%;
-    border: #B28F3E;
-    border-radius: 2px;
-}
-
-.subtotal {
-    margin-top: 40px
-}
-
-h4 {
-    color: black;
-}
-
-p {
-    color: black
-}
-</style>  -->
