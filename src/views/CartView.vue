@@ -17,6 +17,7 @@
                                         <hr>
                                     </div>
                                     <div class="col-12">
+                                       
                                         <div class="label" id="product-category">Category Name</div>
                                         <div class="label" id="product-size">100ml</div>
                                     </div>
@@ -25,6 +26,9 @@
                             <div class="col-4 col-md-2">
                                 <div class="row">
                                     <div class="col-12">
+                                        <div>
+                                            <div class="label" id="product-price">R 130.00</div>
+                                        </div>
                                         <div class="form-outline">
                                             <input type="number" id="typeNumber" class="form-control" />
                                         </div>
@@ -32,6 +36,7 @@
                                     <div class="col-12">
                                         <div class="btn" id="add-btn">Remove</div>
                                     </div>
+
                                 </div>
                             </div>
                         </div>
@@ -70,7 +75,10 @@
     justify-content: center;
     align-items: center;
 }
+#product-price{
+    margin-top: 10px;
 
+}
 
 .img {
     width: 120%;
