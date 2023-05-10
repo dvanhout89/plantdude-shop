@@ -11,7 +11,7 @@
                             <div class="row">
 
                                 <div class="col-9" id="product-name">
-                                    <div class="card-title" >REISHI, CHAGA & ECHINACEA TINCTURE</div>
+                                    <div class="card-title" >PRODUCT NAME HERE</div>
                                     <hr>
                                 </div>
                                 
@@ -26,7 +26,7 @@
 
                                 <div class="col-9">
                                     <div class="label" id="product-category">Category Name</div>
-                                    <div class="label" id="product-size">100ml</div>
+                                    <div class="label" id="product-size">000ml</div>
                                 </div>
                                 <div class="col-3">
                                     <div class="form-outline">
