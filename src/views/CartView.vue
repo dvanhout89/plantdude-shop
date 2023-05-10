@@ -3,41 +3,41 @@
         <h1 class="view-title">Cart</h1>
 
         <div class="container product-card">
-    <div class="card px-2">
-        <div class="row">
-            <div class="col-4 col-md-2 " id="img-col">
-                <img src="../assets/mushroom.jpg" class="img" alt="Picture of Mushroom Related Medicine">
-            </div>
-            <div class="col-4 col-md-4">
-                <div class="row product-details">
-                    <div class="col-12" id="product-name">
-                        <div class="card-title">REISHI, CHAGA & ECHINACEA TINCTURE</div>
-                        <hr>
-                    </div>
-                    <div class="col-12">
-                        <div class="label" id="product-category">Category Name</div>
-                        <div class="label" id="product-size">100ml</div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-4 col-md-4">
+            <div class="card px-2">
                 <div class="row">
-                    <div class="col-12">
-                        <div>
-                            <div class="label" id="product-price">R 130.00</div>
-                        </div>
-                        <div class="form-outline">
-                            <input type="number" id="typeNumber" class="form-control" />
+                    <div class="col-4 col-md-2 " id="img-col">
+                        <img src="../assets/mushroom.jpg" class="img" alt="Picture of Mushroom Related Medicine">
+                    </div>
+                    <div class="col-4 col-md-4">
+                        <div class="row product-details">
+                            <div class="col-12" id="product-name">
+                                <div class="card-title">REISHI, CHAGA & ECHINACEA TINCTURE</div>
+                                <hr>
+                            </div>
+                            <div class="col-12">
+                                <div class="label" id="product-category">Category Name</div>
+                                <div class="label" id="product-size">100ml</div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-12">
-                        <div class="btn" id="add-btn">Remove</div>
+                    <div class="col-4 col-md-4">
+                        <div class="row">
+                            <div class="col-12">
+                                <div>
+                                    <div class="label" id="product-price">R 130.00</div>
+                                </div>
+                                <div class="form-outline">
+                                    <input type="number" id="typeNumber" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="btn" id="add-btn">Remove</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</div>
 
         <div class="subtotal">
             <div class="mb-4">
@@ -76,21 +76,24 @@
     width: 120%;
     border-radius: 50%;
 }
-#product-price{
+
+#product-price {
     margin-top: 10px;
 
 }
 
 
-.form-outline{
+.form-outline {
     margin-top: 15px;
-  
+
 }
+
 #product-name {
     font-size: smaller;
     font-weight: bolder;
 }
-.card-title{
+
+.card-title {
     font-size: 15px;
 }
 
@@ -133,7 +136,8 @@
 h1 {
     color: black;
 }
-.subtotal{
+
+.subtotal {
     margin-top: 20px;
 }
 
@@ -196,6 +200,4 @@ p {
 
 #add-btn:active {
     background-color: grey;
-}
-
-</style>
+}</style>
