@@ -3,7 +3,7 @@
         <div class="card px-2">
             <div class="row">
                 <div class="col-12 col-md-4" id="img-col">
-                    <img src="../assets/placeholder.webp" class="img" alt="Picture of Mushroom Related Medicine">
+                    <img src="../assets/mushroom.jpg" class="img" alt="Picture of Mushroom Related Medicine">
                 </div>
                 <div class=" col-12 col-md-8">
                     <div class="row">
@@ -18,7 +18,7 @@
                                 <div class="col-3" id="product-price-col">
                                     <div class="label" id="product-price">R 0.00</div>
                                 </div>
-                                
+
                             </div>
                         </div>
                         <div class="col-12">
