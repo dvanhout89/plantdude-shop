@@ -2,7 +2,10 @@
 
 <div class="container products">
     <h1 class="view-title">Products</h1>
-    
+    <ul v-for="product in products">
+    <li>{{ product.title}}</li>
+    </ul>
+
 </div>
 </template>
 
@@ -20,3 +23,30 @@
         justify-content: center;
     }
 </style>
+
+<script>
+
+import {getAllProducts} from '../services/ProductService'
+
+
+export default {
+  data() {
+    return {
+      products: [],
+      numOfProducts: 0
+    };
+  },
+  mounted(){
+    getAllProducts().then(response => {
+            console.log(response)
+            this.products = response
+        })
+  },
+  methods: {
+    getAllProducts(){
+        
+    }
+  }
+
+}
+</script>
