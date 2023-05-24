@@ -11,7 +11,7 @@
                             <div class="row">
 
                                 <div class="col-9" id="product-name">
-                                    <div class="card-title" >PRODUCT NAME HERE</div>
+                                    <div class="card-title" >{{ name }}</div>
                                     <hr>
                                 </div>
                                 
@@ -51,6 +51,10 @@
 
 .card {
     bottom: 10px;
+    margin-left: 40px;
+    position: relative;
+    display: inline-block;
+    width:100%;
 }
 
 #img-col {
@@ -89,4 +93,10 @@
 }
 
 </style>
+
+<script>
+export default{
+    props: ['name']
+}
+</script>
 

@@ -1,10 +1,13 @@
 <template>
 
 <div class="container products">
-    <h1 class="view-title">Products</h1>
-    <ul v-for="product in products">
-    <li>{{ product.title}}</li>
-    </ul>
+    <!-- <h1 class="view-title">Products</h1> -->
+<div v-for="product in products">
+    <product-card-component :name="product.title"/>
+
+</div>
+    
+   
 
 </div>
 </template>
@@ -27,13 +30,14 @@
 <script>
 
 import {getAllProducts} from '../services/ProductService'
+import ProductCard from '../components/ProductCard.vue'
 
 
 export default {
   data() {
     return {
       products: [],
-      numOfProducts: 0
+      numOfProducts: 0,
     };
   },
   mounted(){
@@ -46,6 +50,9 @@ export default {
     getAllProducts(){
         
     }
+  },
+  components:{
+    'product-card-component':ProductCard
   }
 
 }
