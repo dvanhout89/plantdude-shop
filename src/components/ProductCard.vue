@@ -1,6 +1,6 @@
 <template>
     <div class="container product-card">
-        <div class="card px-2" @click="saveProductId(productId)">
+        <div class="card px-2" @click="saveProductId">
             <div class="row">
                 <div class="col-12 col-md-4" id="img-col">
                     <img src="../assets/placeholder.webp" class="img" alt="Picture of Mushroom Related Medicine">
