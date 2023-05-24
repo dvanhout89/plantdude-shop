@@ -1,6 +1,6 @@
 <template>
     <div class="container product-card">
-        <div class="card px-2">
+        <div class="card px-2" @click="saveProductId(productId)">
             <div class="row">
                 <div class="col-12 col-md-4" id="img-col">
                     <img src="../assets/placeholder.webp" class="img" alt="Picture of Mushroom Related Medicine">
@@ -11,10 +11,10 @@
                             <div class="row">
 
                                 <div class="col-9" id="product-name">
-                                    <div class="card-title" >{{ name }}</div>
+                                    <div class="card-title">{{ name }}</div>
                                     <hr>
                                 </div>
-                                
+
                                 <div class="col-3" id="product-price-col">
                                     <div class="label" id="product-price">R 0.00</div>
                                 </div>
@@ -44,17 +44,23 @@
 </template>
 
 <style>
-
 .container {
-    color:black;
+    color: black;
 }
 
 .card {
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s;
+    cursor: pointer;
     bottom: 10px;
     margin-left: 40px;
     position: relative;
     display: inline-block;
-    width:100%;
+    width: 100%;
+}
+
+.product-card .card:hover {
+    cursor: pointer;
 }
 
 #img-col {
@@ -74,7 +80,7 @@
 
 #product-name {
     font-size: large;
-    font-weight:bolder;
+    font-weight: bolder;
 }
 
 #add-btn {
@@ -91,12 +97,18 @@
 #add-btn:active {
     background-color: grey;
 }
-
 </style>
 
 <script>
-export default{
-    props: ['name']
+export default {
+    props: ['name', 'productId'],
+    methods: {
+        saveProductId() {
+            sessionStorage.setItem('productId', this.productId);
+
+            this.$router.push({ name: 'productDescription', params: { id: this.productId } });
+        }
+    }
 }
 </script>
 

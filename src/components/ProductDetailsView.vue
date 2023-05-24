@@ -111,7 +111,6 @@
 <script>
 import { getProduct } from '../services/ProductService';
 
-
 export default {
   data() {
     return {
@@ -119,20 +118,23 @@ export default {
     };
   },
   mounted() {
-    this.getProduct("8263744913693"); 
+    const productId = sessionStorage.getItem('productId');
+    if (productId) {
+      this.getProduct(productId);
+    }
   },
   methods: {
-    async getProduct(productId) { 
+    async getProduct(productId) {
       try {
         const response = await getProduct(productId);
         console.log(response);
         this.product = response;
-        console.log(this.product)
+        console.log(this.product);
       } catch (error) {
         console.log(error);
       }
-    }
-  }
+    },
+  },
 };
 </script>
 

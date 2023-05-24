@@ -3,7 +3,7 @@
 <div class="container products">
     <!-- <h1 class="view-title">Products</h1> -->
 <div v-for="product in products">
-    <product-card-component :name="product.title"/>
+    <product-card-component :name="product.title" :productId="product.productId"/>
 
 </div>
     
