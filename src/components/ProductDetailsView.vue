@@ -1,6 +1,5 @@
 <template>
     <div class="container product-card">
-        <div class="card px-2">
             <div class="row">
                 <div class="col-12 col-md-4" id="img-col">
                     <img :src="product.imageUrl" class="img" alt="Picture of Mushroom Related Medicine">
@@ -40,7 +39,6 @@
                 </div>
             </div>
         </div>
-    </div>
 </template>
 
 
@@ -60,9 +58,9 @@
 {
     bottom: 15px;
 }
-.card {
+/* .card {
     bottom: 10px;
-}
+} */
 
 #img-col {
     background-color: #1D3329;
