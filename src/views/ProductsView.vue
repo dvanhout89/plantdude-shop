@@ -1,21 +1,17 @@
 <template>
-
-<div class="container products">
+  <div class="container products">
     <!-- <h1 class="view-title">Products</h1> -->
-<div v-for="product in products">
-    <product-card-component :name="product.title" :productId="product.productId"/>
-
-</div>
-    
-   
-
-</div>
+    <div v-for="product in products">
+      <product-card-component :name="product.title" :productId="product.productId" />
+    </div>
+  </div>
 </template>
 
 <style>
     .products {
         min-height: 100vh;
         display: flex;
+        flex-direction: column;
         background: aliceblue;
         text-align: center;
         justify-content: center;

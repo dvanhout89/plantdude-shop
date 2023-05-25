@@ -53,10 +53,15 @@
     transition: box-shadow 0.3s;
     cursor: pointer;
     bottom: 10px;
-    margin-left: 40px;
+    margin-bottom: 40px;
+    padding-bottom: 10px;
     position: relative;
     display: inline-block;
     width: 100%;
+}
+
+.product-card {
+    padding-bottom: 10px;
 }
 
 .product-card .card:hover {
