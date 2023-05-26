@@ -1,9 +1,9 @@
 <template>
     <div class="container product-card">
-        <div class="card px-2" @click="saveProductId">
+        <div class="card px-2">
             <div class="row">
                 <div class="col-12 col-md-4" id="img-col">
-                    <img :src="images" class="img" alt="Picture of Mushroom Related Medicine">
+                    <img :src="images" class="img" @click="saveProductId" alt="Picture of Mushroom Related Medicine">
                 </div>
                 <div class=" col-12 col-md-8">
                     <div class="row">
@@ -11,7 +11,7 @@
                             <div class="row">
 
                                 <div class="col-9" id="product-name">
-                                    <div class="card-title">{{ name }}</div>
+                                    <div class="card-title" @click="saveProductId">{{ name }}</div>
                                     <hr>
                                 </div>
 
