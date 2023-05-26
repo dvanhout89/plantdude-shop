@@ -16,7 +16,7 @@
                                 </div>
 
                                 <div class="col-3" id="product-price-col">
-                                    <div class="label" id="product-price">{{ price }}</div>
+                                    <div class="label" id="product-price">R {{ price }}</div>
                                 </div>
 
                             </div>
@@ -26,7 +26,7 @@
 
                                 <div class="col-9">
                                     <div class="label" id="product-category">Category Name</div>
-                                    <div class="label" id="product-size">{{gram}}ml</div>
+                                    <div class="label" id="product-size">{{gram}} ml</div>
                                 </div>
                                 <div class="col-3">
                                     <div class="form-outline">
@@ -44,11 +44,11 @@
 </template>
 
 <style>
-.container {
+.container.product-card {
     color: black;
 }
 
-.card {
+.container.product-card .card {
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
     transition: box-shadow 0.3s;
     cursor: pointer;
@@ -60,7 +60,7 @@
     width: 100%;
 }
 
-.product-card {
+.container.product-card .product-card {
     padding-bottom: 10px;
 }
 
@@ -68,27 +68,27 @@
     cursor: pointer;
 }
 
-#img-col {
+.container.product-card #img-col {
     background-color: #1D3329;
 }
 
-.img {
+.container.product-card .img {
     width: 100%;
 }
 
-#product-price-col {
+.container.product-card #product-price-col {
     justify-content: center;
     align-content: center;
     text-align: center;
     top: 30px;
 }
 
-#product-name {
+.container.product-card #product-name {
     font-size: large;
     font-weight: bolder;
 }
 
-#add-btn {
+.container.product-card #add-btn {
     top: 5px;
     margin-top: 5px;
     margin-bottom: 10px;
@@ -99,7 +99,7 @@
     width: 100%;
 }
 
-#add-btn:active {
+.container.product-card #add-btn:active {
     background-color: grey;
 }
 </style>

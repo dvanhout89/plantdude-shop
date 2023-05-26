@@ -55,139 +55,141 @@
 </template>
  
 <style>
-.container {
+.container.cart {
     text-align: center;
     color: black;
+    height: 100%;
 }
 
-.card {
+.container.cart .card {
     bottom: 10px;
     margin-top: 40px;
 }
 
-#img-col {
+.container.cart body {
+    height: 100%;
+}
+
+
+.container.cart #img-col {
     background-color: #1D3329;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.img {
+.container.cart .img {
     width: 120%;
     border-radius: 50%;
 }
 
-#product-price {
+.container.cart #product-price {
     margin-top: 10px;
 
 }
 
 
-.form-outline {
+.container.cart .form-outline {
     margin-top: 15px;
 
 }
 
-#product-name {
+.container.cart #product-name {
     font-size: smaller;
     font-weight: bolder;
 }
 
-.card-title {
+.container.cart .card-title {
     font-size: 15px;
 }
 
-#product-category,
-#product-size {
+.container.cart #product-category,
+.container.cart #product-size {
     margin-bottom: 10px;
     font-size: smaller;
 }
 
-.input-container {
+.container.cart .input-container {
     margin-top: 40px;
     margin-bottom: 10px;
 }
 
 
 @media (max-width: 767px) {
-    .product-card .col-4 {
+    .container.cart .product-card .col-4 {
         flex-basis: 33.33%;
         max-width: 33.33%;
     }
 
-    #img-col {
+    .container.cart #img-col {
         justify-content: center;
         align-items: center;
         height: 20vh;
         width: fit-content;
     }
 
-    #add-btn {
+    .container.cart #add-btn {
         background-color: #1D3329;
         color: white;
     }
 
-    .img {
+    .container.cart .img {
         max-width: 70%;
     }
 }
 
 
-h1 {
+.container.cart h1 {
     color: black;
 }
 
-.subtotal {
+.container.cart .subtotal {
     margin-top: 20px;
 }
 
-.subtotal>h4,
+.container.cart .subtotal>h4,
 p {
     color: rgb(39, 39, 39);
     height: 100px;
 }
 
-.subtotal>button {
+.container.cart .subtotal>button {
     width: 100%;
     background-color: #B28F3E;
     border: #B28F3E;
     margin-bottom: 100px;
 }
 
-.container {
-    color: black;
-}
-
-.card {
+.container.cart .card {
     height: 20vh;
     bottom: 10px;
     margin-top: 40px;
     width: 100%;
 }
 
-#img-col {
+.container.cart #img-col {
     background-color: #1D3329;
 }
 
-.img {
+.container.cart .img {
     width: 130px;
     border-radius: 50%;
     height: 20vh;
 }
 
-#product-price-col {
+.container.cart #product-price-col {
     justify-content: center;
     align-content: center;
     text-align: center;
     top: 30px;
 }
 
-#product-name {
+.container.cart #product-name {
     font-size: large;
     font-weight: bolder;
 }
 
-#add-btn {
+.container.cart #add-btn {
     top: 5px;
     margin-top: 5px;
     margin-bottom: 10px;
@@ -198,6 +200,7 @@ p {
     width: 100%;
 }
 
-#add-btn:active {
+.container.cart #add-btn:active {
     background-color: grey;
-}</style>
+}
+</style>

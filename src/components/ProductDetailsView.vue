@@ -1,5 +1,5 @@
 <template>
-    <div class="container product-card">
+    <div class="container product-details-card">
             <div class="row">
                 <div class="col-12 col-md-4" id="img-col">
                     <img :src="product.imageUrl" class="img" alt="Picture of Mushroom Related Medicine">
@@ -13,7 +13,7 @@
                                     <hr>
                                 </div>
                                 <div class="col-3" id="product-price-col">
-                                    <div class="price" id="product-price">{{ product.price }}</div>
+                                    <div class="price" id="product-price">R {{ product.price }}</div>
                                 </div>
                             </div>
                         </div>
@@ -21,7 +21,7 @@
                             <div class="row">
                                 <div class="col-9">
                                     <div class="product-category" id="product-category">{{ product.category }}</div>
-                                    <div class="product-size" id="product-size">{{ product.gram}}</div>
+                                    <div class="product-size" id="product-size">{{ product.gram}} ml</div>
                                 </div>
                                 <div class="col-3">
                                     <div class="form-outline">
@@ -43,18 +43,18 @@
 
 
 <style>
-.container {
+.container.product-details-card {
     color: black;
 }
-.pt-5 {
+.container.product-details-card .pt-5 {
     padding-top: -3rem!important;
     padding-bottom: 4rem!important;
 }
-.card-title
+.container.product-details-card .card-title
 {
     top:10px;
 }
-.price
+.container.product-details-card .price
 {
     bottom: 15px;
 }
@@ -62,28 +62,28 @@
     bottom: 10px;
 } */
 
-#img-col {
+.container.product-details-card #img-col {
     background-color: #1D3329;
 }
 
-.img {
+.container.product-details-card .img {
     width: 100%;
     border-radius:50%;
 }
 
-#product-price-col {
+.container.product-details-card #product-price-col {
     justify-content: center;
     align-content: center;
     text-align: center;
     top: 30px;
 }
 
-#product-name {
+.container.product-details-card #product-name {
     font-size: large;
     font-weight: bolder;
 }
 
-#add-btn {
+.container.product-details-card #add-btn {
     top: 5px;
     margin-top: 5px;
     margin-bottom: 10px;
@@ -94,14 +94,14 @@
     width: 100%;
 }
 
-#add-btn:active {
+.container.product-details-card #add-btn:active {
     background-color: grey;
 }
-.product-size
+.container.product-details-card .product-size
 {
     top:10px;
 }
-.product-category
+.container.product-details-card .product-category
 {
     top: 5px;
 }
@@ -136,4 +136,3 @@ export default {
   },
 };
 </script>
-
