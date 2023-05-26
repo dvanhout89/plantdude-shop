@@ -3,7 +3,7 @@
         <div class="card px-2" @click="saveProductId">
             <div class="row">
                 <div class="col-12 col-md-4" id="img-col">
-                    <img src="../assets/placeholder.webp" class="img" alt="Picture of Mushroom Related Medicine">
+                    <img :src="images" class="img" alt="Picture of Mushroom Related Medicine">
                 </div>
                 <div class=" col-12 col-md-8">
                     <div class="row">
@@ -16,7 +16,7 @@
                                 </div>
 
                                 <div class="col-3" id="product-price-col">
-                                    <div class="label" id="product-price">R 0.00</div>
+                                    <div class="label" id="product-price">{{ price }}</div>
                                 </div>
 
                             </div>
@@ -26,7 +26,7 @@
 
                                 <div class="col-9">
                                     <div class="label" id="product-category">Category Name</div>
-                                    <div class="label" id="product-size">000ml</div>
+                                    <div class="label" id="product-size">{{gram}}ml</div>
                                 </div>
                                 <div class="col-3">
                                     <div class="form-outline">
@@ -106,7 +106,7 @@
 
 <script>
 export default {
-    props: ['name', 'productId'],
+    props: ['name', 'productId', 'price', 'gram', 'images'],
     methods: {
         saveProductId() {
             sessionStorage.setItem('productId', this.productId);
